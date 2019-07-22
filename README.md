@@ -3,6 +3,14 @@ This library contains common funtionality that I use across many Laravel
 applications. I think some of this stuff belongs in the framework, but
 what do I know?
 
+Installation is simple:
+
+```
+composer require bram1028/laravel-support
+```
+
+The service provider will be loaded automatically.
+
 ---
 
 ## @optional
@@ -28,3 +36,6 @@ Makes styling active nav links much cleaner.
     </li>
 </ul>
 ```
+
+And yes, you can pass multiple route names. The last parameter is used as the
+output value.
