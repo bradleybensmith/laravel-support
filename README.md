@@ -20,7 +20,7 @@ Checks if a section has content, so you can wrap a yield in other code.
 @optional('hero')
     <div class="hero">
         <div class="hero-body">
-            @yield('hero')
+            {!! $yield !!}
         </div>
     </div>
 @endoptional

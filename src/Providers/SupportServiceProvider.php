@@ -18,7 +18,7 @@ class SupportServiceProvider extends ServiceProvider
     {
         // Add @optional for Complex Yielding
         Blade::directive('optional', static function($expression) {
-            return "<?php if(trim(\$__env->yieldContent({$expression}))): ?>";
+            return "<?php if (\$yield = trim(\$__env->yieldContent({$expression}))): ?>";
         });
 
         // Add @endoptional for Complex Yielding
