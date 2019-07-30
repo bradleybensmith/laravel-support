@@ -39,3 +39,11 @@ Makes styling active nav links much cleaner.
 
 And yes, you can pass multiple route names. The last parameter is used as the
 output value.
+
+## artisan job:list
+Lists all jobs under `App\Jobs`.
+
+## artisan job:run
+Runs a job under `App\Jobs`.
+
+ > Currently only supports jobs without constructor parameters.
