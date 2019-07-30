@@ -8,10 +8,28 @@ use Illuminate\Support\ServiceProvider;
 
 class SupportServiceProvider extends ServiceProvider
 {
+    /**
+     * Bootstrap any package services.
+     *
+     * @return void
+     */
     public function boot()
     {
         $this->bootBladeDirectives();
         $this->bootMacros();
+    }
+
+    /**
+     * Register any package services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $this->commands([
+            Console\JobList::class,
+            Console\JobRun::class,
+        ]);
     }
 
     private function bootBladeDirectives()
