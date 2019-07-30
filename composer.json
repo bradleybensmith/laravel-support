@@ -23,7 +23,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Laravel\\Support\\Providers\\SupportServiceProvider"
+                "Laravel\\Support\\ServiceProvider"
             ]
         }
     },
