@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "php": "^7.2",
+        "php": "^7.3|^8.0",
         "hanneskod/classtools": "^1.2.1",
         "symfony/finder": "^4|^5"
     },
