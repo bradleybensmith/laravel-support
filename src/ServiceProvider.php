@@ -61,6 +61,6 @@ class ServiceProvider extends BaseServiceProvider
             } else {
                 return new Collection($items);
             }
-        })
+        });
     }
 }
