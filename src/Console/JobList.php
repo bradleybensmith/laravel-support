@@ -2,10 +2,10 @@
 
 namespace Laravel\Support\Console;
 
+use ReflectionClass;
 use Illuminate\Console\Command;
 use Symfony\Component\Finder\Finder;
 use hanneskod\classtools\Iterator\ClassIterator;
-use ReflectionClass;
 
 class JobList extends Command
 {
@@ -22,16 +22,6 @@ class JobList extends Command
      * @var string
      */
     protected $description = 'List all jobs';
-
-    /**
-     * Create a new command instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        parent::__construct();
-    }
 
     /**
      * Execute the console command.

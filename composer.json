@@ -12,6 +12,10 @@
     "require": {
         "php": "^7.3|^8.0",
         "hanneskod/classtools": "^1.2.1",
+        "illuminate/bus": "^8.0",
+        "illuminate/collections": "^8.0",
+        "illuminate/console": "^8.0",
+        "illuminate/support": "^8.0",
         "symfony/finder": "^4|^5"
     },
     "autoload": {
