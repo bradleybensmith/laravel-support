@@ -2,6 +2,8 @@
 
 namespace Laravel\Support;
 
+use Traversable;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
@@ -52,5 +54,13 @@ class ServiceProvider extends BaseServiceProvider
             $true = array_pop($patterns);
             return Route::is(...$patterns) ? $true : '';
         });
+
+        Collection::macro('fromIterable', function($items) {
+            if ($items instanceof Traversable) {
+                return new Collection(iterator_to_array($items));
+            } else {
+                return new Collection($items);
+            }
+        })
     }
 }
